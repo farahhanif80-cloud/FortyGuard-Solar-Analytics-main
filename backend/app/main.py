@@ -103,3 +103,6 @@ def rank_sites_endpoint(request: RankSitesRequest):
         "ranked_sites": ranked,
         "recommendation": recommendation,
     }
+  @app.get("/")
+def health_check():
+    return {"status": "ok"}
